@@ -14,8 +14,12 @@ void crossProduct(float coord1, float coord2, float coord3, float coord4, float 
 
 int main()
 {
+    // Use an array instead of assigning variables to each coord. 2 arrays for each vector
     float coord1, coord2, coord3, coord4, coord5, coord6, dotProd, crossProd1, crossProd2, crossProd3;
     char dotOrCross;
+
+    // Again, prolly better to do a for loop for input and an array to put inside
+
     printf("Enter the x coordinate of vector a: \n");
     scanf("%f", &coord1);
     printf("Enter the y coordinate of vector a: \n");
@@ -30,6 +34,8 @@ int main()
     printf("Enter the z coordinate of vector b: \n");
     scanf("%f", &coord6);
 
+    // clear prep 
+    
     getchar();
     printf("Enter D for Dot Product or C for Cross Product, or B for both: \n");
     scanf("%c", &dotOrCross);
